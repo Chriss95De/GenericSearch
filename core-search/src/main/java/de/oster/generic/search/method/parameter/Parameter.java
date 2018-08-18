@@ -6,7 +6,7 @@ public interface Parameter<T> {
 
     String getDescription();
 
-    Class<?> getType();
+    void setRawValue(String rawValue);
 
-    T parseValue(String input);
+    T getValue();
 }

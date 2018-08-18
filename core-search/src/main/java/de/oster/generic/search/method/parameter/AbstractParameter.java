@@ -10,6 +10,8 @@ package de.oster.generic.search.method.parameter;
  */
 public abstract class AbstractParameter<T> implements Parameter {
 
+    protected String rawValue;
+
     @Override
     public String getName() {
         return "value";
@@ -20,4 +22,8 @@ public abstract class AbstractParameter<T> implements Parameter {
         return "";
     }
 
+    @Override
+    public void setRawValue(String rawValue) {
+        this.rawValue = rawValue;
+    }
 }

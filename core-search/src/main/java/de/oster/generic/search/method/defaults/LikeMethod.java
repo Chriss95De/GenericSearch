@@ -1,12 +1,9 @@
 package de.oster.generic.search.method.defaults;
 
-import de.oster.generic.search.method.Method;
 import de.oster.generic.search.method.parameter.BasicStringParameter;
 import de.oster.generic.search.method.parameter.Parameter;
 
-import java.util.ArrayList;
-
-public class LikeMethod implements Method {
+public class LikeMethod extends AbstractMethod {
 
     @Override
     public String getName() {
@@ -14,16 +11,16 @@ public class LikeMethod implements Method {
     }
 
     @Override
-    public ArrayList<Parameter> getParameters() {
+    public Parameter[] getParameters() {
 
-        ArrayList<Parameter> params = new ArrayList<>();
+        Parameter[] params = new Parameter[1];
 
-        params.add(new BasicStringParameter(){
+        params[0] = new BasicStringParameter(){
             @Override
             public String getDescription() {
                 return "Outputs anything like the given value. Wildcards are defined by %";
             }
-        });
+        };
 
         return params;
     }

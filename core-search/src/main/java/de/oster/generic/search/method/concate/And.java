@@ -6,4 +6,5 @@ public class And implements Concate {
     public String getName() {
         return "AND";
     }
+
 }

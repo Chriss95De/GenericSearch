@@ -17,6 +17,12 @@ public interface Method extends StatementPart {
     /**
      * Defines the parameter types, order naturally given by the {@link ArrayList}.
      */
-    List<Parameter> getParameters();
+    Parameter[] getParameters();
+
+
+    /**
+     * Injects the name of the field or attribute that is operated on.
+     */
+    void setAttributeName(String attribute);
 
 }

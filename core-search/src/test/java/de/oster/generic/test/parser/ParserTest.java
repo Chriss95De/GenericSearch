@@ -18,5 +18,4 @@ public class ParserTest {
         new StatementParser().parse("wasdasd.like(blub, wasd, 1234)");
 
     }
-
 }

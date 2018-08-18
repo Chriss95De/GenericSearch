@@ -6,4 +6,5 @@ public class Or implements Concate {
     public String getName() {
         return "OR";
     }
+
 }

@@ -6,4 +6,5 @@ public class Not implements Concate {
     public String getName() {
         return "NOT";
     }
+
 }
