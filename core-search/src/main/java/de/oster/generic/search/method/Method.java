@@ -15,7 +15,7 @@ public interface Method extends StatementPart {
 
 
     /**
-     * Defines the parameter types, order naturally given by the {@link ArrayList}.
+     * Defines the needed parameter for the method
      */
     Parameter[] getParameters();
 
