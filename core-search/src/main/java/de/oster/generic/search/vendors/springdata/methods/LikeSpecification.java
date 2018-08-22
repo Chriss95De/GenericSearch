@@ -12,7 +12,7 @@ import javax.persistence.criteria.Root;
 /**
  * Created by Christian Oster christian.oster95@gmail.com on 19.08.2018.
  */
-public class LikeSpecification extends LikeMethod implements Specification
+public class LikeSpecification extends LikeMethod<Specification> implements Specification
 {
     @Override
     public Predicate toPredicate(Root root, CriteriaQuery query, CriteriaBuilder cb) {

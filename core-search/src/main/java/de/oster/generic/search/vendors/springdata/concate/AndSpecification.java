@@ -11,10 +11,11 @@ import javax.persistence.criteria.Root;
 /**
  * Created by Christian Oster christian.oster95@gmail.com on 19.08.2018.
  */
-public class AndSpecification extends And implements Specification {
+public class AndSpecification extends And<Specification> implements Specification {
 
     @Override
     public Predicate toPredicate(Root root, CriteriaQuery query, CriteriaBuilder criteriaBuilder) {
-        return criteriaBuilder.and();
+        return criteriaBuilder.and(this.getMethod().toPredicate(root, query, criteriaBuilder));
     }
+
 }

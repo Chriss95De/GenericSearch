@@ -3,7 +3,7 @@ package de.oster.generic.search.method.defaults;
 import de.oster.generic.search.method.parameter.BasicStringParameter;
 import de.oster.generic.search.method.parameter.Parameter;
 
-public class LikeMethod extends AbstractMethod {
+public abstract class LikeMethod<T> extends AbstractMethod {
 
     @Override
     public String getName() {

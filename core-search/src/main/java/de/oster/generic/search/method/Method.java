@@ -6,7 +6,7 @@ import de.oster.generic.search.method.parameter.Parameter;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface Method extends StatementPart {
+public interface Method<T> extends StatementPart {
 
     /**
      * Identifier for the parser.
